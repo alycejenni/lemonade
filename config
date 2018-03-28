@@ -1,0 +1,31 @@
+---
+modules:
+    - clock:
+        format: '%a %d %b %H:%M'
+        align: c
+    - battery:
+        align: r
+        charging: 
+        icon:
+            - 
+            - 
+            - 
+            - 
+            - 
+    - herbstluftwm:
+        align: l
+        show_empty: false
+        this_monitor_only: true
+        tag_formats:
+            default:
+                bg: color0
+                fg: color8
+            focused_this:
+                bg: color8
+                fg: color7
+    - package_manager:
+        align: r
+formatter:
+    colours: '/home/alice/.cache/wal/colors.json'
+interval: 1
+...
